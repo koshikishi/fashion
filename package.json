@@ -1,0 +1,34 @@
+{
+  "name": "fashion",
+  "version": "0.1.0",
+  "scripts": {
+    "build": "gulp build",
+    "deploy": "gh-pages -d build -m \"Сделал сборку сайта\"",
+    "start": "gulp start"
+  },
+  "homepage": "https://koshikishi.github.io/fashion",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "del": "^5.1.0",
+    "gh-pages": "^2.1.1",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.0",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^6.1.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-posthtml": "^3.0.4",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-svgmin": "^2.2.0",
+    "gulp-svgstore": "^7.0.1",
+    "gulp-uglify": "^3.0.2",
+    "imagemin-mozjpeg": "^8.0.0",
+    "imagemin-pngquant": "^8.0.0",
+    "path": "^0.12.7",
+    "posthtml-include": "^1.2.0",
+    "readable-stream": "^3.4.0",
+    "scss-resets": "^0.4.0"
+  }
+}
