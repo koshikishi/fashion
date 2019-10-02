@@ -5,3 +5,8 @@
   color: $colorText;
   background-color: $colorWhite;
 }
+
+.page__header {
+  position: relative;
+  z-index: 2;
+}
