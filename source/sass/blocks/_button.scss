@@ -1,0 +1,25 @@
+.button {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 174px;
+  font: #{$fontSizeButton}/#{$lineHeightButton} $fontFamilyTitle;
+  vertical-align: middle;
+  text-align: center;
+  color: $colorWhite;
+  text-transform: uppercase;
+  letter-spacing: $letterSpacingButton;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  background-color: $colorPrimary;
+  border: 2px solid transparent {
+    radius: 29.5px;
+  }
+  cursor: pointer;
+
+  &--small {
+    width: 114px;
+    padding: 12px 10px 10px;
+    font-size: $fontSizeButtonTiny;
+    border-radius: 19.5px
+  }
+}
