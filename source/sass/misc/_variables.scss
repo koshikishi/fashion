@@ -1,6 +1,104 @@
+$colorWhite: #ffffff;
+$colorWhiteDark: #f8f8f8;
+$colorBlack: #000000;
+
+$colorPrimary: #171717;
+
+$colorText: #535353;
+$colorTextLight: #7d7d7d;
+$colorTextXLight: #898989;
+$colorTextDark: #1a1a1a;
+$colorTextFooter: #727272;
+
+$colorTitle: #2d2b27;
+$colorTitleAlt: #292929;
+$colorTitleFooter: #575153;
+
+$colorTextButton1: #121212;
+$colorTextButton2: #2b2b2b;
+$colorTextButton3: #353535;
+
+$colorButtonPrevNext: rgba(#5f5f5f, 0.5);
+$colorButtonPrevNextHover: rgba(#afafaf, 0.5);
+
+$colorBorder: #d9c8aa;
+$colorBorderGray: #d9d9d9;
+
+$colorSeparator: #f3ebdc;
+
+$colorBackgroundSocial: #ededed;
+$colorBackgroundSlider: #c4c9cd;
+$colorBackgroundModal: #383838;
+$colorBackgroundOffer: #00b7d9;
+$colorBackgroundSubscribe: #d7dbd5;
+
 $fontWeightLight: 300;
 $fontWeightNormal: 400;
 $fontWeightMedium: 500;
 $fontWeightSemiBold: 600;
 $fontWeightBold: 700;
 $fontWeightExtraBold: 800;
+
+$fontSizeText: 14px;
+$fontSizeTextLarge: 20.89px;
+
+$fontSizeTitleTiny: 17.79px;
+$fontSizeTitleSmall: 18.94px;
+$fontSizeTitle: 26px;
+$fontSizeTitleLarge: 37.66px;
+$fontSizeTitleHuge: 116.74px;
+$fontSizeTitleOffer: 18.86px;
+$fontSizeTitleOfferLarge: 22.02px;
+$fontSizeTitleFooter: 15px;
+
+$fontSizeButtonTiny: 8.59px;
+$fontSizeButtonSmall: 10.58px;
+$fontSizeButton: 13px;
+$fontSizeButtonLarge: 14.24px;
+
+$fontSizeTiny: 11px;
+$fontSizeSmall: 12px;
+$fontSizeMedium: 16.21px;
+$fontSizeLarge: 18px;
+
+$fontSizeModalPriceOld: 21.86px;
+$fontSizeModalPriceNew: 38.26px;
+$fontSizeModalTimerSmall: 11.04px;
+$fontSizeModalTimerLarge: 38.22px;
+$fontSizeSocial: 10px;
+
+$lineHeightTextSmall: 1.714;
+$lineHeightText: 1.857;
+$lineHeightTextAlt: 1.429;
+
+$lineHeightTitleSmall: 0.923;
+$lineHeightTitle: 1.2;
+$lineHeightTitleModal: 1.227;
+$lineHeightTitleFooter: 1.333;
+
+$lineHeightButton: 1.538;
+$lineHeightButtonLarge: 1.667;
+
+$lineHeightNav: 1.917;
+$lineHeightSlider: 25.05px;
+$lineHeightProduct: 1.467;
+$lineHeightFooter: 2.143;
+
+$fontFamilyText: "Open Sans", "Arial", sans-serif;
+$fontFamilyTextAlt: "Raleway", "Arial", sans-serif;
+$fontFamilyTitle: "Montserrat", "Arial", sans-serif;
+
+$letterSpacingText: 0.05em;
+$letterSpacingTextLarge: 0.4em;
+
+$letterSpacingTitleTiny: 0.02em;
+$letterSpacingTitleSmall: 0.075em;
+$letterSpacingTitle: 0.1em;
+
+$letterSpacingButton: 0.06em;
+$letterSpacingButtonLarge: 0.18em;
+$letterSpacingButtonHuge: 0.2em;
+
+$letterSpacingNav: 0.08em;
+$letterSpacingPrice: -0.02em;
+$letterSpacingSocial: 0.14em;
