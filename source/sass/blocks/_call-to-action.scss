@@ -1,0 +1,41 @@
+.call-to-action {
+  box-sizing: border-box;
+  min-height: 250px;
+  background: {
+    repeat: no-repeat;
+    position: center;
+  }
+
+  &--offer {
+    padding: 53px 65px 46px 500px;
+    background: {
+      color: $colorBackgroundOffer;
+      image: url("../img/offer_bg.jpg");
+    }
+  }
+}
+
+.call-to-action__content {
+  width: 550px;
+  text-align: center;
+}
+
+.call-to-action__title {
+  @extend %title;
+
+  .call-to-action--offer & {
+    margin-bottom: 11px;
+  }
+}
+
+.call-to-action__subtitle {
+  @extend %subtitle;
+
+  .call-to-action--offer & {
+    margin-bottom: 30px;
+  }
+
+  .call-to-action--subscribe & {
+    font-size: $fontSizeMedium;
+  }
+}

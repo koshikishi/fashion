@@ -1,0 +1,19 @@
+.products-nav {
+  @extend %list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.products-nav__item {
+  margin: {
+    right: 21px;
+    left: 22px;
+  }
+
+  a {
+    @extend %title;
+    font-size: $fontSizeTitleSmall;
+    text-transform: none;
+  }
+}

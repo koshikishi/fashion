@@ -12,5 +12,13 @@
 }
 
 .page__slider {
-  margin-bottom: 10px;
+  margin-bottom: 77px;
+}
+
+.page__offers {
+  @extend %container-narrow;
+  margin: {
+    top: 38px;
+    bottom: 50px;
+  }
 }

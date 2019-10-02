@@ -1,0 +1,23 @@
+.offers__products-nav {
+  margin-bottom: 51px;
+}
+
+.offers__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 526px;
+  margin-bottom: 25px;
+
+  @supports (display: grid) {
+    display: grid;
+    grid-template-columns: 270px 470px 370px;
+    gap: 22px 30px;
+    height: auto;
+  }
+}
+
+.offers__offer {
+  position: relative;
+}
