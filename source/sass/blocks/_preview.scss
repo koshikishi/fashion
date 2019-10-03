@@ -21,6 +21,7 @@
 
 .preview__title {
   @extend %title;
+  margin-bottom: 2px;
   padding-left: 21px;
   font-size: $fontSizeTitleTiny;
   letter-spacing: $letterSpacingText;
