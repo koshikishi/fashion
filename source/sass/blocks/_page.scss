@@ -39,6 +39,14 @@
   @extend %container-narrow;
   margin: {
     top: 38px;
+    bottom: 89px;
+  }
+}
+
+.page__call-to-action {
+  @extend %container-narrow;
+  margin: {
+    top: 44px;
     bottom: 100px;
   }
 }

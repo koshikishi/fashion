@@ -31,6 +31,16 @@
     padding: 18px 29px 17px;
     font-size: $fontSizeSmall;
     line-height: $lineHeightButtonLarge;
+    border-radius: 29.5px
+  }
+
+  &--large {
+    width: 205px;
+    padding: 22px 21px 21px;
+    font-size: $fontSizeButtonLarge;
+    line-height: $lineHeightButtonLarge;
+    letter-spacing: $letterSpacingText;
+    border-radius: 35px
   }
 
   &--white {

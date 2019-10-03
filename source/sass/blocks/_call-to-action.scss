@@ -13,6 +13,14 @@
       image: url("../img/offer_bg.jpg");
     }
   }
+
+  &--subscribe {
+    padding: 47px 467px 43px 98px;
+    background: {
+      color: $colorBackgroundSubscribe;
+      image: url("../img/subscribe_bg.jpg");
+    }
+  }
 }
 
 .call-to-action__content {
@@ -26,6 +34,10 @@
   .call-to-action--offer & {
     margin-bottom: 11px;
   }
+
+  .call-to-action--subscribe & {
+    margin-bottom: 12px;
+  }
 }
 
 .call-to-action__subtitle {
@@ -36,6 +48,7 @@
   }
 
   .call-to-action--subscribe & {
+    margin-bottom: 24px;
     font-size: $fontSizeMedium;
   }
 }
