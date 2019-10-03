@@ -31,11 +31,19 @@
     padding: 18px 29px 17px;
     font-size: $fontSizeSmall;
     line-height: $lineHeightButtonLarge;
-    background-color: $colorWhite;
   }
 
   &--white {
     color: $colorTextButton2;
     letter-spacing: $letterSpacingButtonLarge;
+    background-color: $colorWhite;
+  }
+
+  &--bordered {
+    width: 174px;
+    color: $colorTextDark;
+    letter-spacing: $letterSpacingText;
+    background-color: $colorWhite;
+    border-color: $colorBorder;
   }
 }

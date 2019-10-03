@@ -27,6 +27,18 @@
   @extend %container-narrow;
   margin: {
     top: 50px;
+    bottom: 73px;
+  }
+
+  @supports (display: grid) {
+    margin-bottom: 95px;
+  }
+}
+
+.page__products {
+  @extend %container-narrow;
+  margin: {
+    top: 38px;
     bottom: 100px;
   }
 }
