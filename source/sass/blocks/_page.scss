@@ -47,6 +47,18 @@
   @extend %container-narrow;
   margin: {
     top: 44px;
-    bottom: 100px;
+    bottom: 98px;
+  }
+}
+
+.page__previews {
+  @extend %container-narrow;
+  margin: {
+    top: 49px;
+    bottom: 11px;
+  }
+
+  @supports (display: grid) {
+    margin-bottom: 33px;
   }
 }
