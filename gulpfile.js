@@ -56,6 +56,9 @@ function js() {
   return pipeline(
     src(`source/js/*.js`),
     uglify(),
+    rename({
+      suffix: `.min`
+    }),
     dest(`build/js`)
   );
 }
