@@ -56,4 +56,13 @@
     background-color: $colorWhite;
     border-color: $colorBorder;
   }
+
+  &--modal {
+    width: 125px;
+    padding: 13px 12px 10px;
+    font-size: $fontSizeButtonSmall;
+    color: $colorTextButton1;
+    background-color: $colorSeparator;
+    border-radius: 21.5px
+  }
 }
