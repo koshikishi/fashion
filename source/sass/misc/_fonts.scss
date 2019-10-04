@@ -1,0 +1,8 @@
+@include font-face("Montserrat", "Light", $fontWeightLight);
+@include font-face("Montserrat", "Regular");
+@include font-face("Montserrat", "SemiBold", $fontWeightSemiBold);
+@include font-face("Montserrat", "Bold", $fontWeightBold);
+@include font-face("Montserrat", "ExtraBold", $fontWeightExtraBold);
+@include font-face("Open Sans", "Regular");
+@include font-face("Open Sans", "Regular", $style: italic);
+@include font-face("Raleway", "Medium", $fontWeightMedium);

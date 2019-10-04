@@ -1,3 +1,20 @@
+%container-wide {
+  box-sizing: border-box;
+  width: 1920px;
+  margin: {
+    right: auto;
+    left: auto;
+  }
+}
+
+%container-narrow {
+  width: 1170px;
+  margin: {
+    right: auto;
+    left: auto;
+  }
+}
+
 %list-reset {
   margin: {
     top: 0;
@@ -5,4 +22,87 @@
   }
   padding-left: 0;
   list-style: none;
+}
+
+%title {
+  margin: {
+    top: 0;
+    bottom: 0;
+  }
+  font: $fontWeightSemiBold #{$fontSizeTitle}/#{$lineHeightTitle} $fontFamilyTitle;
+  text-align: center;
+  color: $colorTitle;
+  text-transform: uppercase;
+  letter-spacing: $letterSpacingTitle;
+}
+
+%title-header {
+  margin: {
+    top: 0;
+    bottom: 0;
+  }
+  font-family: $fontFamilyTitle;
+  color: $colorPrimary;
+  text-transform: uppercase;
+}
+
+%title-slogan {
+  margin: {
+    top: 0;
+    bottom: 0;
+  }
+  font: {
+    weight: $fontWeightBold;
+    family: $fontFamilyTitle;
+  }
+  line-height: $lineHeightTitle;
+  color: $colorTitle;
+  text-transform: uppercase;
+  letter-spacing: $letterSpacingTitleSmall;
+}
+
+%title-modal {
+  margin: {
+    top: 0;
+    bottom: 0;
+  }
+  font-family: $fontFamilyTitle;
+  line-height: $lineHeightTitleModal;
+  color: $colorWhite;
+  text-transform: uppercase;
+}
+
+%subtitle {
+  margin: {
+    top: 0;
+    bottom: 0;
+  }
+  font-family: $fontFamilyTitle;
+  line-height: $lineHeightTextAlt;
+  text-align: center;
+  color: $colorTextDark;
+  text-transform: uppercase;
+  letter-spacing: $letterSpacingTextLarge;
+}
+
+%text-product {
+  margin: {
+    top: 0;
+    bottom: 0;
+  }
+  font: #{$fontSizeTitleFooter}/#{$lineHeightProduct} $fontFamilyTitle;
+  color: $colorTextDark;
+}
+
+%text-footer {
+  margin: {
+    top: 0;
+    bottom: 0;
+  }
+  font: {
+    weight: $fontWeightLight;
+    family: $fontFamilyTitle;
+  }
+  line-height: $lineHeightFooter;
+  color: $colorTextFooter;
 }

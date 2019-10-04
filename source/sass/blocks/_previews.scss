@@ -1,0 +1,32 @@
+.previews__title {
+  @extend %title;
+  margin-bottom: 55px;
+}
+
+.previews__control {
+  position: relative;
+
+  .control__button {
+    top: 166px;
+  }
+}
+
+.previews__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @supports (display: grid) {
+    display: grid;
+    grid-template-columns: 570px 570px;
+    gap: 22px 30px;
+  }
+}
+
+.previews__previews {
+  margin-bottom: 22px;
+
+  @supports (display: grid) {
+    margin-bottom: 0;
+  }
+}

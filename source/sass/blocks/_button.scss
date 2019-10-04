@@ -1,0 +1,68 @@
+.button {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 174px;
+  padding: 18px 15px;
+  font: #{$fontSizeButton}/#{$lineHeightButton} $fontFamilyTitle;
+  vertical-align: middle;
+  text-align: center;
+  color: $colorWhite;
+  text-transform: uppercase;
+  letter-spacing: $letterSpacingButton;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  background-color: $colorPrimary;
+  border: 2px solid transparent {
+    radius: 29.5px;
+  }
+  cursor: pointer;
+
+  &--small {
+    width: 114px;
+    padding: 12px 10px 10px;
+    font-size: $fontSizeButtonTiny;
+    border-radius: 19.5px
+  }
+
+  &--medium {
+    width: auto;
+    min-width: 174px;
+    max-width: 300px;
+    padding: 18px 29px 17px;
+    font-size: $fontSizeSmall;
+    line-height: $lineHeightButtonLarge;
+    border-radius: 29.5px
+  }
+
+  &--large {
+    width: 205px;
+    padding: 22px 21px 21px;
+    font-size: $fontSizeButtonLarge;
+    line-height: $lineHeightButtonLarge;
+    letter-spacing: $letterSpacingText;
+    border-radius: 35px
+  }
+
+  &--white {
+    color: $colorTextButton2;
+    letter-spacing: $letterSpacingButtonLarge;
+    background-color: $colorWhite;
+  }
+
+  &--bordered {
+    width: 174px;
+    color: $colorTextDark;
+    letter-spacing: $letterSpacingText;
+    background-color: $colorWhite;
+    border-color: $colorBorder;
+  }
+
+  &--modal {
+    width: 125px;
+    padding: 13px 12px 10px;
+    font-size: $fontSizeButtonSmall;
+    color: $colorTextButton1;
+    background-color: $colorSeparator;
+    border-radius: 21.5px
+  }
+}

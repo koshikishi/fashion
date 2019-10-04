@@ -1,0 +1,21 @@
+.header {
+  background-color: $colorWhite;
+  border-bottom: 6px solid $colorSeparator;
+}
+
+.header__nav {
+  @extend %container-wide;
+  display: flex;
+  padding: 37px 42px 26px 108px;
+}
+
+.header__logo {
+  margin: {
+    top: 3px;
+    right: 170px;
+  }
+}
+
+.header__main-nav {
+  margin-right: auto;
+}

@@ -1,0 +1,71 @@
+.page {
+  min-width: 1920px;
+  margin: 0;
+  font: #{$fontSizeText}/#{$lineHeightText} $fontFamilyText;
+  color: $colorText;
+  background-color: $colorWhite;
+}
+
+.page__header {
+  position: relative;
+  z-index: 2;
+}
+
+.page__slider {
+  margin-bottom: 77px;
+}
+
+.page__offers {
+  @extend %container-narrow;
+  margin: {
+    top: 38px;
+    bottom: 100px;
+  }
+}
+
+.page__categories {
+  @extend %container-narrow;
+  margin: {
+    top: 50px;
+    bottom: 73px;
+  }
+
+  @supports (display: grid) {
+    margin-bottom: 95px;
+  }
+}
+
+.page__products {
+  @extend %container-narrow;
+  margin: {
+    top: 38px;
+    bottom: 89px;
+  }
+}
+
+.page__call-to-action {
+  @extend %container-narrow;
+  margin: {
+    top: 44px;
+    bottom: 98px;
+  }
+}
+
+.page__previews {
+  @extend %container-narrow;
+  margin: {
+    top: 49px;
+    bottom: 11px;
+  }
+
+  @supports (display: grid) {
+    margin-bottom: 33px;
+  }
+}
+
+.page__social {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}

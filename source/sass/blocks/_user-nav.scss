@@ -1,0 +1,27 @@
+.user-nav {
+  @extend %list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  width: 252px;
+}
+
+.user-nav__item {
+  margin: 7px 12px 4px;
+}
+
+.user-nav__link {
+  display: block;
+  width: 18px;
+  height: 16px;
+  background: {
+    repeat: no-repeat;
+    position: center;
+  }
+
+  @each $item in cart, search, menu {
+    &--#{$item} {
+      background-image: url("../img/user-nav_icon-#{$item}.svg");
+    }
+  }
+}

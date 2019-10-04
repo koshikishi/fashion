@@ -1,0 +1,14 @@
+.category {
+  width: 370px;
+
+  img {
+    display: block;
+  }
+}
+
+.category__button {
+  position: absolute;
+  bottom: 45px;
+  left: 50%;
+  transform: translateX(-50%);
+}

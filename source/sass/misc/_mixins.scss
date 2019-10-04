@@ -1,0 +1,28 @@
+@mixin font-face($family, $weightName, $weight: normal, $style: normal) {
+  $fontName: $family;
+  $fontNameSecond: spaceless($family);
+
+  @if $style == normal {
+    $fontName: $fontName + " " + $weightName;
+    $fontNameSecond: $fontNameSecond + "-" + $weightName;
+  } @else if $weight == normal {
+    $fontName: $fontName + " " + capitalize($style);
+    $fontNameSecond: $fontNameSecond + "-" + capitalize($style);
+  } @else {
+    $fontName: $fontName + " " + $weightName + " " + capitalize($style);
+    $fontNameSecond: $fontNameSecond + "-" + $weightName + capitalize($style);
+  }
+
+  @font-face {
+    font: {
+      family: $family;
+      weight: $weight;
+      style: $style;
+      display: swap;
+    }
+    src: local($fontName),
+         local($fontNameSecond),
+         url("../fonts/#{to-lower-case($fontNameSecond)}.woff2") format("woff2"),
+         url("../fonts/#{to-lower-case($fontNameSecond)}.woff") format("woff");
+  }
+}

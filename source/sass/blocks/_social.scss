@@ -1,0 +1,48 @@
+.social {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 64px;
+  height: 100vh;
+  padding-top: 158px;
+  background-color: $colorBackgroundSocial;
+}
+
+.social__text {
+  @extend %title;
+  margin-left: -3px;
+  font-size: $fontSizeSocial;
+  color: $colorBlack;
+  letter-spacing: $letterSpacingSocial;
+  white-space: nowrap;
+  transform: rotate(-90deg);
+}
+
+.social__list {
+  @extend %list-reset;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 28px;
+}
+
+.social__item {
+  margin-bottom: 41px;
+}
+
+.social__icon {
+  display: block;
+  width: 19px;
+  height: 20px;
+  background: {
+    repeat: no-repeat;
+    position: left;
+  }
+
+  @each $social in fb, tw, gplus, insta {
+    &--#{$social} {
+      background-image: url("../img/social_icon-#{$social}.svg");
+    }
+  }
+}

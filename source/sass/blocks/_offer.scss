@@ -1,0 +1,165 @@
+.offer {
+  &--narrow {
+    width: 270px;
+
+    @supports (display: grid) {
+      grid-column: 1 / 2;
+    }
+  }
+
+  &--wide {
+    width: 470px;
+
+    @supports (display: grid) {
+      grid-column: 2 / 3;
+    }
+  }
+
+  &--medium {
+    width: 370px;
+
+    @supports (display: grid) {
+      grid-column: 3 / 4;
+    }
+  }
+
+  &--new {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 27px;
+      right: 50px;
+      border: solid $colorTextDark {
+        width: 7px 0 7px 10px;
+        top-color: transparent;
+        bottom-color: transparent;
+      }
+    }
+
+    &::after {
+      content: "new";
+      position: absolute;
+      top: 11px;
+      right: 12px;
+      padding: 5px 9px;
+      font: #{$fontSizeTiny}/#{$lineHeightTitle} $fontFamilyTitle;
+      color: $colorWhiteDark;
+      text-transform: uppercase;
+      letter-spacing: $letterSpacingText;
+      background-color: $colorTextDark;
+    }
+  }
+
+  &--shoes {
+    @supports (display: grid) {
+      grid-row: 1 / 3;
+    }
+  }
+
+  &--women {
+    @supports (display: grid) {
+      grid-row: 1 / 4;
+    }
+  }
+
+  &--men {
+    @supports (display: grid) {
+      grid-row: 1 / 2;
+    }
+  }
+
+  &--sunglasses {
+    @supports (display: grid) {
+      grid-row: 2 / 4;
+    }
+  }
+
+  img {
+    display: block;
+  }
+}
+
+.offer__content {
+  position: absolute;
+  box-sizing: border-box;
+  width: 100%;
+
+  .offer--shoes & {
+    bottom: 20px;
+    padding: {
+      right: 57px;
+      left: 43px;
+    }
+  }
+
+  .offer--women & {
+    top: 124px;
+    padding: {
+      right: 260px;
+      left: 36px;
+    }
+  }
+
+  .offer--men & {
+    top: 72px;
+    padding: {
+      right: 200px;
+      left: 29px;
+    }
+  }
+
+  .offer--sunglasses & {
+    bottom: 28px;
+    padding: {
+      right: 56px;
+      left: 44px;
+    }
+  }
+}
+
+.offer__slogan {
+  @extend %title-slogan;
+  text-align: center;
+
+  .offer--shoes & {
+    font-size: $fontSizeTitleOfferLarge;
+  }
+
+  .offer--sunglasses & {
+    font-size: $fontSizeButton;
+    color: $colorTitleAlt;
+    letter-spacing: $letterSpacingText;
+  }
+}
+
+.offer__category {
+  margin: {
+    top: 0;
+    bottom: 0;
+  }
+  font: $fontWeightMedium #{$fontSizeButton}/#{$lineHeightTextAlt} $fontFamilyTextAlt;
+  color: $colorTitleAlt;
+  letter-spacing: $letterSpacingText;
+
+  .offer--women & {
+    margin-bottom: 18px;
+    padding-left: 4px;
+  }
+
+  .offer--men & {
+    margin-bottom: 8px;
+  }
+}
+
+.offer__title {
+  @extend %title-slogan;
+  font-size: $fontSizeTitleOffer;
+
+  .offer--women & {
+    margin-bottom: 39px;
+  }
+
+  .offer--men & {
+    margin-bottom: 35px;
+  }
+}

@@ -1,0 +1,42 @@
+.products__title {
+  @extend %title;
+  margin-bottom: 44px;
+}
+
+.products__products-nav {
+  margin-bottom: 55px;
+}
+
+.products__control {
+  position: relative;
+}
+
+.products__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+
+  @supports (display: grid) {
+    display: grid;
+    grid-template-columns: 270px 270px 270px 270px;
+    gap: 22px 30px;
+    margin-bottom: 42px;
+  }
+}
+
+.products__product {
+  margin-bottom: 22px;
+
+  @supports (display: grid) {
+    margin-bottom: 0;
+  }
+}
+
+.products__button {
+  display: block;
+  margin: {
+    right: auto;
+    left: auto;
+  }
+}

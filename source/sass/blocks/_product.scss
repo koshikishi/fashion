@@ -1,0 +1,38 @@
+.product {
+  width: 270px;
+
+  img {
+    display: block;
+    margin-bottom: 26px;
+  }
+}
+
+.product__info {
+  padding: {
+    right: 5px;
+    left: 5px;
+  }
+}
+
+.product__title {
+  @extend %text-product;
+  font-weight: $fontWeightBold;
+}
+
+.product__brand {
+  @extend %text-product;
+  color: $colorTextXLight;
+}
+
+.product__price {
+  @extend %text-product;
+
+  s {
+    margin-right: 5px;
+    text-decoration: line-through;
+  }
+
+  b {
+    font-weight: $fontWeightBold;
+  }
+}

@@ -1,0 +1,40 @@
+.preview {
+  width: 570px;
+
+  img {
+    display: block;
+  }
+}
+
+.preview__heading {
+  position: relative;
+  box-sizing: border-box;
+  width: 498px;
+  margin: {
+    top: -37px;
+    right: auto;
+    left: auto;
+  }
+  padding: 20px 15px 15px;
+  background-color: $colorWhite;
+}
+
+.preview__title {
+  @extend %title;
+  margin-bottom: 2px;
+  padding-left: 21px;
+  font-size: $fontSizeTitleTiny;
+  letter-spacing: $letterSpacingText;
+}
+
+.preview__meta {
+  margin: {
+    top: 0;
+    bottom: 0;
+  }
+  padding-right: 30px;
+  font-style: italic;
+  line-height: $lineHeightTextSmall;
+  text-align: center;
+  color: $colorTextLight;
+}

@@ -1,0 +1,54 @@
+.control__button {
+  position: absolute;
+  top: 190px;
+  width: 49px;
+  height: 49px;
+  padding: 0;
+  color: $colorBorderGray;
+  background: none;
+  border: 2px solid $colorBorderGray {
+    radius: 50%;
+  }
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: 13px;
+    border: solid currentColor {
+      width: 8.5px 13px;
+      top-color: transparent;
+      bottom-color: transparent;
+      left: none;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 18px;
+    left: 17px;
+    border: solid $colorWhite {
+      width: 4.5px 7px;
+      top-color: transparent;
+      bottom-color: transparent;
+      left: none;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    color: $colorPrimary;
+    outline: none;
+  }
+
+  &--left {
+    left: -93px;
+  }
+
+  &--right {
+    right: -68px;
+    transform: scaleX(-1);
+  }
+}
