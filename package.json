@@ -8,7 +8,7 @@
   },
   "homepage": "https://koshikishi.github.io/fashion",
   "devDependencies": {
-    "browser-sync": "^2.26.7",
+    "browser-sync": "^2.29.3",
     "del": "^5.1.0",
     "gh-pages": "^2.1.1",
     "gulp": "^4.0.2",
